@@ -13,7 +13,7 @@ buttonEnviar.addEventListener('click',()=>{
   const keyAPI = '9c8c716d34159b02fc95aa11008665f6'
   
 
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value},${country}&appid=${keyAPI}`)
+  fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${value},${country}&appid=${keyAPI}`)
     .then(response => response.json())
     .then(data =>{
       const lat = data[0].lat
