@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Wheater Map</title>
+</head>
+<body>
+
+
+  <section class="container">
+    <div class="city">
+      <div class="inputs">
+        <input  id="inputCity" type="text" placeholder="Digite o nome de uma cidade e selecione o seu país">
+        <select name="country" id="country">
+          <option value="BR">BR</option>
+          <option value="ES">ES</option>
+          <option value="US">EUA</option>
+        </select>
+      </div>
+
+      <button id="buttonEnviar">Buscar</button>
+    </div>
+
+    <div class="stats">
+      <div class="card">
+        <div class="temperatura">
+          <span class="temp">21°C</span>
+          <img id="imgClima" src="img/nublado.png" alt="">
+        </div>
+
+        <span class="nameCity">Belo Horizonte</span>
+
+        <div class="umidade-e-vento">
+          <div class="umidade">
+            <img src="img/agua.png" alt="">
+            <span class="umidadeValue">20%</span>
+          </div>
+
+          <div class="vento">
+            <img src="img/vento.png" alt="">
+            <span class="ventoValue">5km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

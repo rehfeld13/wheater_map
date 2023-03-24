@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background_wheater.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  max-width: 90%;
+  height: 500px;
+  background-color: rgb(90, 44, 196);
+  border-radius: 10px;
+}
+
+.container .city{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.container .city .inputs #inputCity{
+  width: 500px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 4px solid rgb(28, 14, 61);
+}
+
+.container .city .inputs #country{
+  border-radius: 10px;
+  border-bottom: 4px solid rgb(28, 14, 61);
+  width: 80px; 
+  padding: 5px 15px;
+}
+
+.container .city .inputs #country:focus{
+  border-bottom: 4px solid blueviolet;
+}
+
+.container .city .inputs #inputCity:focus{
+  border-bottom: 4px solid blueviolet;
+}
+
+
+.container .city #buttonEnviar{
+  width: 200px;
+  padding: 5px 0px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-bottom: 4px solid rgb(28, 14, 61);
+}
+
+.container .city #buttonEnviar:hover{
+  cursor: pointer;
+  border-bottom: 4px solid blueviolet;
+}
+
+.container .stats{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 6, 58);
+  margin-top: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.container .stats .card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+
+.container  .stats .card .temperatura{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container  .stats .card .temperatura .temp{
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.container .stats .card .temperatura img{
+  width: 45px;
+  margin-top: 10px;
+
+}
+
+.container .stats .card .nameCity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container .stats .card .umidade-e-vento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 3px solid rgb(16, 6, 58);
+}
+
+.container .stats .card .umidade-e-vento .umidade,
+.container .stats .card .umidade-e-vento .vento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container .stats .card .umidade-e-vento .umidade img,
+.container .stats .card .umidade-e-vento .vento img{
+  width: 50px;
+}
+
+.container .stats .card .umidade-e-vento .umidade .umidadeValue,
+.container .stats .card .umidade-e-vento .vento .ventoValue{
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 762px){
+  .container .city .inputs #inputCity{
+    width: 330px;
+  }
+}
+
+@media (max-width: 493px){
+  .container .stats .card{
+    width: 180px;
+  }
+
+  .container .city .inputs #inputCity{
+    width: 150px;
+  }
+
+  .container .city .inputs #inputCity::placeholder{
+    font-size: 10px;
+  }
+
+
+}
